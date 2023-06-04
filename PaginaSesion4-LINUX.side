@@ -1,0 +1,398 @@
+{
+  "id": "e2293634-e316-4538-8898-e231af06a99e",
+  "version": "2.0",
+  "name": "PaginaSesion4",
+  "url": "https://hmis-pagina-equipo11.westus3.cloudapp.azure.com",
+  "tests": [{
+    "id": "cfe6f51f-8352-4ded-8504-457d32f2f522",
+    "name": "Untitled",
+    "commands": [{
+      "id": "3a329f70-5aaa-4a21-81e0-6e5642797fb9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d727b2a7-2847-4dca-a013-058e4d7e2af7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "776x864",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "faddcd99-324f-4df6-a6e2-6a49a8015065",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main",
+      "targets": [
+        ["css=.main", "css:finder"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "425e5557-7824-4cb6-b6fa-37461179fc85",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'SESION 4')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27a6debd-80dd-47fb-9fe5-bb76b5515a9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Esta es la pagina que vamos a utilizar para la sesion 4 de Herramientas y Metodos de la Ingenieria del Software donde podreis conocer un poco a los integrantes del equipo 11')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cce7f884-8fef-4358-b022-55fff6a88c53",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Esta es la pagina que vamos a utilizar para la sesion 4 de Herramientas y Metodos de la Ingenieria del Software donde podreis conocer un poco a los integrantes del equipo 11')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c0b2cd4-b5ba-4dac-8eb4-3b804659304e",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5451ebc7-1865-42cf-a890-e0ddc912861a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Los recursos utilizados para esta asignatura se pueden encontrar a continuacion:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e2861b8-aa16-4b09-9dc2-1cd04ebcc377",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "762b81bc-7547-4245-adf0-d227e43a99e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.resources",
+      "targets": [
+        ["css=.resources", "css:finder"],
+        ["xpath=//div/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55eeaa2d-48aa-4083-9f8e-3e5986119273",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Juan Raul Mellado Garcia",
+      "targets": [
+        ["linkText=Juan Raul Mellado Garcia", "linkText"],
+        ["css=.juanra", "css:finder"],
+        ["xpath=//a[contains(text(),'Juan Raul Mellado Garcia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'juanra.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Juan Raul Mellado Garcia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47bb2679-8378-4f86-be8b-0bb57c634efd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Daniel Morales Sobrino",
+      "targets": [
+        ["linkText=Daniel Morales Sobrino", "linkText"],
+        ["css=.dani", "css:finder"],
+        ["xpath=//a[contains(text(),'Daniel Morales Sobrino')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'dani.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daniel Morales Sobrino')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "238b04b3-aee0-4ffd-891a-27b5dc2cefce",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Juan Raul Mellado Garcia",
+      "targets": [
+        ["linkText=Juan Raul Mellado Garcia", "linkText"],
+        ["css=.juanra", "css:finder"],
+        ["xpath=//a[contains(text(),'Juan Raul Mellado Garcia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'juanra.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Juan Raul Mellado Garcia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0f40ba1-9ed3-4bb0-9a8c-ea68981c226f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main > .container",
+      "targets": [
+        ["css=.main > .container", "css:finder"],
+        ["xpath=//main/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da3f352d-1302-44e6-81dc-7325a0b0aee2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Juan Raul Mellado Garcia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d210fde2-54c4-455e-b2b9-b319949257f2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=hp",
+      "targets": [
+        ["id=hp", "id"],
+        ["css=#hp", "css:finder"],
+        ["xpath=//img[@alt='Haz la pantalla mas grande']", "xpath:img"],
+        ["xpath=//img[@id='hp']", "xpath:attributes"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7af7e17-8119-4669-b9fd-f4258bcc68cc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Daniel Morales Sobrino",
+      "targets": [
+        ["linkText=Daniel Morales Sobrino", "linkText"],
+        ["css=.dani", "css:finder"],
+        ["xpath=//a[contains(text(),'Daniel Morales Sobrino')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'dani.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daniel Morales Sobrino')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ba09e48-bb7d-46a2-a7d1-5dd63cc5dabc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Daniel Morales Sobrino",
+      "targets": [
+        ["linkText=Daniel Morales Sobrino", "linkText"],
+        ["css=.dani", "css:finder"],
+        ["xpath=//a[contains(text(),'Daniel Morales Sobrino')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'dani.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daniel Morales Sobrino')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55265b86-37d1-41b9-9f75-acc146b4fd20",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73d06d72-3bac-4640-a81f-63a1dd98980d",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Me llamo Daniel Morales Sobrino. Soy percusionista y me gusta jugar al padel.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e869eed-cadd-44d3-a5a8-19b45552080a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main",
+      "targets": [
+        ["css=.main", "css:finder"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a2b0add-408a-49c9-8fdf-d29c653eb161",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Daniel Morales Sobrino')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffb2b842-a1d4-4d23-ae7e-aa5c4aac3f8e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=hp",
+      "targets": [
+        ["id=hp", "id"],
+        ["css=#hp", "css:finder"],
+        ["xpath=//img[@alt='Haz la pantalla mas grande']", "xpath:img"],
+        ["xpath=//img[@id='hp']", "xpath:attributes"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ecf5a4e-aaa0-4f45-9383-a423d7830b32",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Pagina de Git Hub",
+      "targets": [
+        ["linkText=Pagina de Git Hub", "linkText"],
+        ["css=.enlace > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Pagina de Git Hub')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://github.com/dms932')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pagina de Git Hub')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7ede8ed-72b2-4bbf-bcab-ccdb97b776c8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Juan Raul Mellado Garcia",
+      "targets": [
+        ["linkText=Juan Raul Mellado Garcia", "linkText"],
+        ["css=.juanra", "css:finder"],
+        ["xpath=//a[contains(text(),'Juan Raul Mellado Garcia')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'juanra.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Juan Raul Mellado Garcia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4223fe34-01c9-4d91-ac19-0190189ef061",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Pagina de Git Hub",
+      "targets": [
+        ["linkText=Pagina de Git Hub", "linkText"],
+        ["css=.enlace > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Pagina de Git Hub')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://github.com/jmg061')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Pagina de Git Hub')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aceee36-6121-4ced-b20f-435206a8c987",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=EQUIPO 11",
+      "targets": [
+        ["linkText=EQUIPO 11", "linkText"],
+        ["css=.logo", "css:finder"],
+        ["xpath=//a[contains(text(),'EQUIPO 11')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'EQUIPO 11')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b857bd4b-b0c1-462e-ab35-3065b2bd6001",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Daniel Morales Sobrino",
+      "targets": [
+        ["linkText=Daniel Morales Sobrino", "linkText"],
+        ["css=.dani", "css:finder"],
+        ["xpath=//a[contains(text(),'Daniel Morales Sobrino')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'dani.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Daniel Morales Sobrino')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67194719-2f94-4f3d-9514-97eae4668f60",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=EQUIPO 11",
+      "targets": [
+        ["linkText=EQUIPO 11", "linkText"],
+        ["css=.logo", "css:finder"],
+        ["xpath=//a[contains(text(),'EQUIPO 11')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'EQUIPO 11')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64cefe48-bf29-4a8f-96db-644cbc9612fa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=EQUIPO 11",
+      "targets": [
+        ["linkText=EQUIPO 11", "linkText"],
+        ["css=.logo", "css:finder"],
+        ["xpath=//a[contains(text(),'EQUIPO 11')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'EQUIPO 11')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2db8d153-4af2-479d-a7e9-98dfd9c96ace",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'SESION 4')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32ef4903-7440-479f-a440-5c77349c5299",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'SESION 4')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1a35a7f4-97ac-4dee-801b-182b904a8373",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cfe6f51f-8352-4ded-8504-457d32f2f522"]
+  }],
+  "urls": ["https://hmis-pagina-equipo11.westus3.cloudapp.azure.com/"],
+  "plugins": []
+}

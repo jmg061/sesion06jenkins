@@ -1,0 +1,200 @@
+{
+  "id": "3a07642a-3807-4627-8e96-6ab5acd7c75d",
+  "version": "2.0",
+  "name": "Sesion6Mejorada",
+  "url": "https://msdocs-node-mongo-2022-group11.azurewebsites.net",
+  "tests": [{
+    "id": "562fae8f-4ad3-432b-9f78-68e24c937e77",
+    "name": "Sesion6Mejorada",
+    "commands": [{
+      "id": "14a749ed-7ac7-4c2b-83ab-a009f694d95a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"Tarea-\" + Math.floor(Math.random()*1500000)",
+      "targets": [],
+      "value": "TareaRandom"
+    }, {
+      "id": "3d0d9bc5-b594-4ca4-8d38-60d7a7e43cd4",
+      "comment": "",
+      "command": "open",
+      "target": "https://msdocs-node-mongo-2022-group11.azurewebsites.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7a6ae1b-a60d-4bf5-ac34-dcfd61006265",
+      "comment": "",
+      "command": "echo",
+      "target": "${TareaRandom}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0e97ec6-fba6-4f8b-8199-7801f8d9d3a1",
+      "comment": "",
+      "command": "click",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d790bc4-c45f-4740-a595-f53fe2916d48",
+      "comment": "",
+      "command": "type",
+      "target": "name=taskName",
+      "targets": [],
+      "value": "${TareaRandom}"
+    }, {
+      "id": "1022d8f7-a31b-4382-a838-bf391f2436bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add task')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f895a2ce-a509-4ab1-8015-e36c96ac6b45",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='row mb-2'][last()]//div[@class='col-sm-6']",
+      "targets": [
+        ["css=.row:nth-child(5) > .col-sm-6", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "${TareaRandom}"
+    }, {
+      "id": "e5e14947-f239-4715-b722-684e32277888",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//main/div[@class='row mb-2']",
+      "targets": [],
+      "value": "count"
+    }, {
+      "id": "5371fb8a-c26c-4003-93a0-0e80290a3f7c",
+      "comment": "",
+      "command": "echo",
+      "target": "${count}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbca6255-6b64-4b6d-8a3a-53b4910b3f7b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@class='row mb-2'][last()]/div[4]/form/button",
+      "targets": [
+        ["css=.row:nth-child(8) .btn-danger", "css:finder"],
+        ["xpath=//div[6]/div[4]/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a14c977c-c62a-4949-b791-25f599a18c9d",
+      "comment": "",
+      "command": "if",
+      "target": "${count}==1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d24d17bd-f15d-4690-99ac-e0923de64ad4",
+      "comment": "",
+      "command": "verifyElementNotPresent",
+      "target": "xpath=//main/div[@class='row mb-2']/div",
+      "targets": [],
+      "value": "presente"
+    }, {
+      "id": "d7f0d8e6-caf4-4d35-b087-992ec2fefe95",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4808e49-3bf3-41c5-ab2c-7517cdfe3ebf",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "xpath=//div[@class='row mb-2'][last()]//div[@class='col-sm-6']",
+      "targets": [],
+      "value": "${TareaRandom}"
+    }, {
+      "id": "0f9e7e0b-54fb-4057-b99b-eb18c055ad68",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0d941ce-b621-4818-b427-bbecffe7ab84",
+      "comment": "",
+      "command": "click",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bdef23f-bd8a-470f-ab68-8aa1a7c44826",
+      "comment": "",
+      "command": "type",
+      "target": "name=taskName",
+      "targets": [],
+      "value": "${TareaRandom}"
+    }, {
+      "id": "1a15806e-ff7d-4bcf-8a0e-748944c22b39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add task')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20f2ffca-96a8-42f4-80ee-60e502961127",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@class='row mb-2'][last()]/div[3]/form/button",
+      "targets": [
+        ["css=.col-sm-6", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "982041f5-33c6-4598-9fb1-17e608eb61ec",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='row mb-3'][last()]/div",
+      "targets": [
+        ["css=.row:nth-child(60) > .col-sm-8", "css:finder"],
+        ["xpath=//div[57]/div", "xpath:position"]
+      ],
+      "value": "${TareaRandom}"
+    }, {
+      "id": "4259ee44-dee8-4d4b-bc42-eac6d4110383",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6b0433ed-1825-44ae-adc9-5a1a196e848a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["562fae8f-4ad3-432b-9f78-68e24c937e77"]
+  }],
+  "urls": ["https://msdocs-node-mongo-2022-group11.azurewebsites.net/"],
+  "plugins": []
+}

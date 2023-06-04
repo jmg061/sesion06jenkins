@@ -1,0 +1,207 @@
+{
+  "id": "cdadb228-b6d7-4982-bf86-8b91066508c3",
+  "version": "2.0",
+  "name": "Sesion6Azure",
+  "url": "https://msdocs-node-mongo-2022-group11.azurewebsites.net",
+  "tests": [{
+    "id": "55125d53-8c00-4553-8af6-01b0470b5dc0",
+    "name": "Untitled",
+    "commands": [{
+      "id": "ab24c3a1-b1b8-4485-b42e-1eb4c9d0b66d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43b9c95e-afcb-4f15-8f56-465cedeb5f3c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "970x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3776e476-045d-4ab1-85c7-b41e8cda0678",
+      "comment": "",
+      "command": "click",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4f13f6a-acd4-4e68-86cf-7463dbb1307f",
+      "comment": "",
+      "command": "type",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "NuevaTarea"
+    }, {
+      "id": "72cc6b3f-953c-4c6e-a138-95292ee10d32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add task')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88fe48ff-77fb-40b7-8a54-8255c1fef2cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6",
+      "targets": [
+        ["css=.col-sm-6", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e8a329-b30e-4425-a0fc-7bd1743e0a01",
+      "comment": "TareaCreada",
+      "command": "assertElementPresent",
+      "target": "css=.col-sm-6",
+      "targets": [
+        ["css=.col-sm-6", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b43c1829-f7d8-4be8-a31f-051b4ddecd5a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//div[4]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4daa4579-2dce-4e78-b352-dbe2fcdebef9",
+      "comment": "TareaBorrada",
+      "command": "assertElementNotPresent",
+      "target": "css=.col-sm-6",
+      "targets": [
+        ["css=.container", "css:finder"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ade5788a-1b09-41ed-84d6-bf49097bf758",
+      "comment": "",
+      "command": "click",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6521706a-4226-40d1-b50e-db844e8e5f02",
+      "comment": "",
+      "command": "type",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "NuevaTarea"
+    }, {
+      "id": "37c45f0a-103c-4a46-b0a0-e34278fa9a23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add task')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f50e1a38-b0f8-48b0-bd35-e13e46df1335",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6",
+      "targets": [
+        ["css=.col-sm-6", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2201c9df-818e-4623-9bea-036b2608c31a",
+      "comment": "TareaCreada",
+      "command": "assertElementPresent",
+      "target": "css=.col-sm-6",
+      "targets": [
+        ["css=.col-sm-6", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33eb1273-7366-4063-9bed-4a02f0f3cb8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Complete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20c9cfbb-a651-44ee-a6c7-533c74f26efd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(8) > .col-sm-8",
+      "targets": [
+        ["css=.row:nth-child(8) > .col-sm-8", "css:finder"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50e02107-ee3d-45dc-a037-b5d2fd6f3377",
+      "comment": "TareaModificada",
+      "command": "assertElementPresent",
+      "target": "css=.row:nth-child(8) > .col-sm-8",
+      "targets": [
+        ["css=.row:nth-child(8) > .col-sm-8", "css:finder"],
+        ["xpath=//div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc218ca2-8d3b-4cc4-a30b-95777e68ab2b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8f9802a3-87c7-4761-bcca-00c40e64a26b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["55125d53-8c00-4553-8af6-01b0470b5dc0"]
+  }],
+  "urls": ["https://msdocs-node-mongo-2022-group11.azurewebsites.net/"],
+  "plugins": []
+}
